@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Kalkulator
+    </title>
+    <style>
+    #back{
+        width:100%;
+        float: left;
+        height: 100%;
+        background:url(pic.jpg);
+    }
+    </style>
+</head>
+<body>
+<div id="back">
+<FORM name="kal">
+    <center>
+        <h1>Kalkulator</h1>
+    <TABLE BORDER=4>
+        <TR>
+            <TD>
+                <!-- readonly agar tidak bisa input(input dengan tombol di html) -->
+                <INPUT type="text" name="Input" Size="13" readonly value="">
+                <br>
+            </TD>
+        </TR>
+        <TR>
+            <TD>
+                <INPUT type="button" name="satu" value=" 1 " OnClick="kal.Input.value += '1'">
+                <INPUT type="button" name="dua" value=" 2 " OnCLick="kal.Input.value += '2'">
+                <INPUT type="button" name="tiga" value=" 3 " OnClick="kal.Input.value += '3'">
+                <INPUT type="button" name="tambah" value=" + " OnClick="kal.Input.value += ' + '">
+                <br>
+                <INPUT type="button" name="empat" value=" 4 " OnClick="kal.Input.value += '4'">
+                <INPUT type="button" name="lima" value=" 5 " OnCLick="kal.Input.value += '5'">
+                <INPUT type="button" name="enam" value=" 6 " OnClick="kal.Input.value += '6'">
+                <INPUT type="button" name="kurang" value=" - " OnClick="kal.Input.value += ' - '">
+                <br>
+                <INPUT type="button" name="tujuh" value=" 7 " OnClick="kal.Input.value += '7'">
+                <INPUT type="button" name="delapan" value=" 8 " OnCLick="kal.Input.value += '8'">
+                <INPUT type="button" name="sembilan" value=" 9 " OnClick="kal.Input.value += '9'">
+                <INPUT type="button" name="kali" value=" x " OnClick="kal.Input.value += ' * '">
+                <br>
+                <INPUT type="button" name="clear" value="clr" OnClick="kal.Input.value = ''">
+                <INPUT type="button" name="nol" value=" 0 " OnClick="kal.Input.value += '0'">
+                <INPUT type="button" name="hsl" value=" = " OnClick="kal.Input.value = eval(kal.Input.value)">
+                <INPUT type="button" name="bagi" value=" / " OnClick="kal.Input.value += ' / '">
+                <br>
+            </TD>
+        </TR>
+    </TABLE>
+    </center>
+</FORM>
+</div>
+<center>
+        <br><br><br>Eko Rachmat Satriyo<hr>
+</center>
+</body>
+</html>
